@@ -1,0 +1,40 @@
+{
+    "height": 32,
+    "mod": "dock",
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-bottom": 5,
+
+    "include": ["~/.config/waybar/modules.json"],
+    
+    "modules-left": [
+        "custom/launcher",
+        "group/hardware",
+        "custom/updates"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "tray",
+        "network",
+        "clock",
+        "custom/exit"
+    ],
+
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "custom/temperature",
+            "custom/gpu",
+            "memory"
+        ]
+    }
+}
+
