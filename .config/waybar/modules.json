@@ -66,9 +66,10 @@
     },
 
     "custom/updates": {
-        "interval": 30,
+        "interval": 3600,
         "format": "󱧘 {}",
         "exec": "~/.config/waybar/scripts/arch_update.sh",
+        "on-click": "~/.config/waybar/scripts/click_update.sh",
         "tooltip": true
     },
 
